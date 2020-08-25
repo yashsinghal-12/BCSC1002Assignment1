@@ -19,5 +19,20 @@ public class Book {
     private String authorName;
     private String iSBNumber;
 
+    // The Constructor Method : Used to initialize the attributes of an object.
+    // public <non-static> <no-return type> <SameAsTheClassName> () {}
+
+    // The Java compiler creates a no-parameter constructor for us automatically.
+    // default constructor
+
+    // we can create two types of constructors:
+    // 1. Non-Parameterized Constructors : The constructor has no parameters.
+
+    public Book() {
+        this.bookName = "";
+        this.authorName = "";
+        this.iSBNumber = "";
+    }
+
 
 }
