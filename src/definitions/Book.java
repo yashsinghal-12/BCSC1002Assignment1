@@ -71,5 +71,13 @@ public class Book {
         this.iSBNumber = iSBNumber;
     }
 
+    // the toString() method : used to convert an object to String
+    public String toString() {
+        return String.format(
+                "Book Name: %s/n, Author Name: %s/n, ISBN Number: %s",
+                getBookName(), getAuthorName(), getiSBNumber()
+        );
+    }
+
 
 }
