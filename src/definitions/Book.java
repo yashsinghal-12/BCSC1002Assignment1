@@ -33,6 +33,19 @@ public class Book {
         this.authorName = "";
         this.iSBNumber = "";
     }
+    // 2. Parameterized Constructors : They have some parameters.
+
+    public Book(String bookName, String authorName, String iSBNumber) {
+        this.bookName = bookName;
+        this.authorName = authorName;
+        this.iSBNumber = iSBNumber;
+    }
+
+    public Book(String bookName) {
+        this.bookName = bookName;
+        this.authorName = "Rusking Bond";
+        this.iSBNumber = "0987654321";
+    }
 
 
 }
