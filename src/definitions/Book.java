@@ -78,6 +78,18 @@ public class Book {
                 getBookName(), getAuthorName(), getiSBNumber()
         );
     }
+    // The equals() and the hashCode() methods.
+    // The Object class in Java is the super class (parent) of all other classes.
+    // When we create any class in Java, it automatically inherits the Object class.
 
+    // book.equals(book1)
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
 
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
 }
