@@ -8,6 +8,13 @@ package definitions;
 
 public class Library {
     private Book[] store;
+
+    public Library() {
+        this.store = new Book[5];
+        for (int bookIndex = 0; bookIndex < store.length; bookIndex++) {
+            store[bookIndex] = new Book("Book " + (bookIndex + 1));
+        }
+    }
 }
 
 
