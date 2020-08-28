@@ -19,6 +19,16 @@ public class Library {
     public Library(Book[] store) {
         this.store = store;
     }
+
+    /**
+     * This method will add a new Book to our Library (store array).
+     *
+     * @param name The name of the new Book that you want to add to the Library.
+     */
+    public void addBook(String name) {
+        System.out.println(name + " is now added to the Library.");
+    }
+
 }
 
 
