@@ -15,6 +15,10 @@ public class Library {
             store[bookIndex] = new Book("Book " + (bookIndex + 1));
         }
     }
+
+    public Library(Book[] store) {
+        this.store = store;
+    }
 }
 
 
