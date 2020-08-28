@@ -29,6 +29,14 @@ public class Library {
         System.out.println(name + " is now added to the Library.");
     }
 
+    /**
+     * This method will help the client/student to rent a Book.
+     *
+     * @param name The name of the Book that the client/student wants to rent.
+     */
+    public void doCheckout(String name) {
+        System.out.println("Thank you for renting \"" + name + "\".");
+    }
 }
 
 
