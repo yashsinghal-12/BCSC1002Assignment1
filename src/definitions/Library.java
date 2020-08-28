@@ -37,6 +37,18 @@ public class Library {
     public void doCheckout(String name) {
         System.out.println("Thank you for renting \"" + name + "\".");
     }
+
+    /**
+     * This method will return a rented Book to the Library.
+     *
+     * @param name The name of the Book that the client/student wants to return.
+     */
+    public void doReturn(String name) {
+        System.out.println(
+                "Thank you for returning \"" + name + "\". Hope you liked it."
+        );
+    }
 }
+
 
 
