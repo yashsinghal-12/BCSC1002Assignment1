@@ -96,6 +96,11 @@ public class Library {
         Library that = (Library) o;
         return Arrays.equals(getStore(), that.getStore());
     }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(getStore());
+    }
 }
 
 
