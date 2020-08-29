@@ -6,6 +6,7 @@
  * */
 package definitions;
 
+
 public class Book {
     // Components of a Definition Class:
     // 1. private fields.
@@ -84,12 +85,15 @@ public class Book {
 
     // book.equals(book1)
     @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
+    public boolean equals(Object o) {
+        if (this == o) { // book == book1
+            return true;
+        }
+        if (o == null || this.getClass() != o.getClass()) {
+            return false;
+        }
+        Book video = (Book) o;
+        return this.getAuthorName() == video.getAuthorName() &&
+                this.getiSBNumber() == video.getiSBNumber() &&
+                this.getBookName().equals(video.getBookName());
     }
-
-    @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
-}

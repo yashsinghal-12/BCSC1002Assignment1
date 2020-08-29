@@ -28,9 +28,17 @@ public class Student {
         this.lastName = "";
         this.universityRollNumber = 0;
         this.numberOfBookIssued = 0;
-
+        this.store = new Book[0];
     }
-}
+    // 2. Parameterized Constructors : They have some parameters.
+
+    public Student(String firstName, String middleName, String lastName, Long universityRollNumber, int numberOfBookIssued,) {
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.lastName = lastName;
+        this.universityRollNumber = universityRollNumber;
+        this.numberOfBookIssued = numberOfBookIssued;
+    }
 
 
 
