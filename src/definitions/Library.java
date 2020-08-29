@@ -48,6 +48,18 @@ public class Library {
                 "Thank you for returning \"" + name + "\". Hope you liked it."
         );
     }
+
+    /**
+     * This method sets a new authorName of a Book.
+     *
+     * @param name       The name of the Book whose author you want to set.
+     * @param authorName The new authorName of the Book.
+     */
+    public void receiveAuthorName(String name, String authorName) {
+        System.out.println(
+                "The authorName of \"" + name + "\" is now set to " + authorName + "."
+        );
+    }
 }
 
 
