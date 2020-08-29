@@ -60,6 +60,15 @@ public class Library {
                 "The authorName of \"" + name + "\" is now set to " + authorName + "."
         );
     }
+
+    /**
+     * This method prints all the books in the inventory (store array).
+     */
+    public void listInventory() {
+        for (Book book : store) {
+            System.out.println(book);
+        }
+    }
 }
 
 
