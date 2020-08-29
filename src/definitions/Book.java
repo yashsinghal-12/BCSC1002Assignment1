@@ -6,7 +6,6 @@
  * */
 package definitions;
 
-
 public class Book {
     // Components of a Definition Class:
     // 1. private fields.
