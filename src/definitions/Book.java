@@ -6,6 +6,8 @@
  * */
 package definitions;
 
+import java.util.Objects;
+
 public class Book {
     // Components of a Definition Class:
     // 1. private fields.
@@ -96,3 +98,10 @@ public class Book {
                 this.getiSBNumber() == video.getiSBNumber() &&
                 this.getBookName().equals(video.getBookName());
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getBookName(), getAuthorName(), getiSBNumber());
+    }
+}
+
