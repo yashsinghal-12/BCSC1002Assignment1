@@ -69,6 +69,14 @@ public class Library {
             System.out.println(book);
         }
     }
+
+    public Book[] getStore() {
+        return store.clone();
+    }
+
+    public void setStore(Book[] store) {
+        this.store = store;
+    }
 }
 
 
