@@ -34,6 +34,14 @@ public class Student {
         System.out.println(name + " is now added to your Account.");
     }
 
+    /**
+     * This method prints all the books in the allIssuedBook (store array).
+     */
+    public void allIssuedBook() {
+        for (Book book : store) {
+            System.out.println(book);
+        }
+    }
 
 }
 
