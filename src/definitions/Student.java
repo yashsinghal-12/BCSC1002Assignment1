@@ -21,6 +21,12 @@ public class Student {
         }
     }
 
+    public Student(Book[] store) {
+        this.store = store;
+    }
+
+}
+
 
 
 
