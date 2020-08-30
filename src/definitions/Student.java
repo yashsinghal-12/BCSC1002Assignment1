@@ -91,6 +91,14 @@ public class Student {
         this.store = store;
     }
 
+    // the toString() method : used to convert an object to String
+    public String toString() {
+        return String.format(
+                "First Name: %s/n, Middle Name: %s/n, last Name: %s, University Roll Number: %d, Number Of Book Issued: %d, Name of the Books issued by Student: %s",
+                getFirstName(), getMiddleName(), getLastName(), getUniversityRollNumber(), getNumberOfBookIssued(), Arrays.toString(getStore())
+        );
+    }
+
 }
 
 
