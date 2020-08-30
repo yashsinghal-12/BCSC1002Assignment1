@@ -52,18 +52,6 @@ public class Library {
     }
 
     /**
-     * This method sets a new authorName of a Book.
-     *
-     * @param name       The name of the Book whose author you want to set.
-     * @param authorName The new authorName of the Book.
-     */
-    public void receiveAuthorName(String name, String authorName) {
-        System.out.println(
-                "The authorName of \"" + name + "\" is now set to " + authorName + "."
-        );
-    }
-
-    /**
      * This method prints all the books in the inventory (store array).
      */
     public void listInventory() {

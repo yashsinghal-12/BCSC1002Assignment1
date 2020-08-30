@@ -14,31 +14,17 @@ public class Student {
     private int numberOfBookIssued;
     private Book[] store;
 
-    // The Constructor Method : Used to initialize the attributes of an object.
-    // public <non-static> <no-return type> <SameAsTheClassName> () {}
-
-    // The Java compiler creates a no-parameter constructor for us automatically.
-    // default constructor
-
-    // we can create two types of constructors:
-    // 1. Non-Parameterized Constructors : The constructor has no parameters.
     public Student() {
-        this.firstName = "";
-        this.middleName = "";
-        this.lastName = "";
-        this.universityRollNumber = 0;
-        this.numberOfBookIssued = 0;
-        this.store = new Book[0];
+        this.store = new Book[5];
+        for (int bookIndex = 0; bookIndex < store.length; bookIndex++) {
+            store[bookIndex] = new Book("Book " + (bookIndex + 1));
+        }
     }
-    // 2. Parameterized Constructors : They have some parameters.
 
-    public Student(String firstName, String middleName, String lastName, Long universityRollNumber, int numberOfBookIssued,) {
-        this.firstName = firstName;
-        this.middleName = middleName;
-        this.lastName = lastName;
-        this.universityRollNumber = universityRollNumber;
-        this.numberOfBookIssued = numberOfBookIssued;
-    }
+
+
+
+
 
 
 

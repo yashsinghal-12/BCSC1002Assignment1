@@ -93,10 +93,10 @@ public class Book {
         if (o == null || this.getClass() != o.getClass()) {
             return false;
         }
-        Book video = (Book) o;
-        return this.getAuthorName() == video.getAuthorName() &&
-                this.getiSBNumber() == video.getiSBNumber() &&
-                this.getBookName().equals(video.getBookName());
+        Book book = (Book) o;
+        return this.getAuthorName().equals(book.getAuthorName()) &&
+                this.getiSBNumber().equals(book.getiSBNumber()) &&
+                this.getBookName().equals(book.getBookName());
     }
 
     @Override
