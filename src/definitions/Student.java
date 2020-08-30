@@ -7,6 +7,7 @@
 package definitions;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Student {
     private String firstName;
@@ -122,7 +123,13 @@ public class Student {
                 Arrays.equals(getStore(), book.getStore());
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(getFirstName(), getMiddleName(), getLastName(), getUniversityRollNumber(), getNumberOfBookIssued(), Arrays.hashCode(getStore()));
+    }
 }
+
+
 
 
 
